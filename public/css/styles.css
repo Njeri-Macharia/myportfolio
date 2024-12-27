@@ -62,6 +62,7 @@ nav il{
   }
   .cv{
     padding: 20px;
+    /* align-items: center; */
   }
 .downcv{
     text-decoration: none;
@@ -74,15 +75,15 @@ nav il{
   /* about me section styling */
   .hero {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
    
   }
   
 .hero-text {
   margin-top: 0;
-  margin-left: 80px;
+  margin-left: 60px;
   flex: 1;
-  /* justify-content: space-between; */
   max-width: 100%;
   }
   
@@ -90,25 +91,39 @@ nav il{
     font-size: 3.0em;
     margin-bottom: 0.5em;
   }
+  .hero-text p{
+   padding-right: 30px;
+   text-align: justify;
+  }
   .hero-image{
     flex: 1; 
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
   }
 
 .hero-image img {
   max-height: 400px;
-  width: 300px;
-  object-fit: cover;
+  width: 100%;
+  margin-right: 80px;
+  object-fit:cover;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   }
+  /* center all the headings */
 .heading{
   text-align: center;
+  padding-top: 20px;
+  font-size: larger;
 } 
-/* project section styling */
-.projects p{
+/* p{
+  text-align: justify;
+  } */
+/*experience section styling */
+.experience{
+  background-color: #FFFFFF;
+  color: #000000;
+  padding-bottom: 60px;
+}
+.experience p{
   font-size: 1.1em;
   /* color: #555; */
   margin-bottom: 40px;
@@ -121,12 +136,13 @@ nav il{
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 10px;
 }
 
 .skill-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.5);
   padding: 20px;
   width: 300px;
   text-align: left;
@@ -176,7 +192,7 @@ nav il{
 }
 /* talk to me styling */
 .contact-section {
-  padding: 200px 150px;
+  padding: 20px  150px;
 }
 
 .container {
@@ -194,7 +210,7 @@ nav il{
 
 .talk-to-me h2, .write-project h2 {
   font-size: 1.8em;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .contact-card {
@@ -292,6 +308,7 @@ footer {
   color: #333; /* Darker text color */
   padding: 20px 0;
   text-align: center;
+  align-items: center;
   font-family: Arial, sans-serif;
 }
 
@@ -304,6 +321,8 @@ footer {
 .footer-container p {
   margin: 10px 0;
   font-size: 14px;
+  align-items: center;
+
 }
 
 .footer-links {
