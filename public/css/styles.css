@@ -76,6 +76,7 @@ nav il{
     font-size: 3.0em;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
+    color: #66fcf1;
   }
   
 .hero-image img {
@@ -181,9 +182,12 @@ nav il{
 
 /*experience section styling */
 .experience{
-  background-color: #FFFFFF;
-  color: #000000;
+  /* background-color: #FFFFFF; */
+  color: #c5c6c7;
   padding-bottom: 60px;
+}
+.experience .heading{
+  color:#66fcf1 ;
 }
 .experience p{
   font-size: 1.1em;
@@ -351,11 +355,18 @@ textarea{
 /* .submit-btn:hover {
   background-color: #;
 } */
-
+/* divider styling */
+.divider {
+  width: 90%;
+  height: 2px;
+  background-color: #1f2833; /* Adjust color as needed */
+  margin: 20px auto;
+  position: relative;
+}
 /* footer styling*/
 footer {
-  background-color: #eaf6ff; /* Light blue background */
-  color: #333; /* Darker text color */
+  /* background-color: #eaf6ff;  */
+  color: #66fcf1; /* Darker text color */
   padding: 20px 0;
   text-align: center;
   align-items: center;
@@ -384,7 +395,7 @@ footer {
 
 .footer-links a {
   text-decoration: none;
-  color: #000000; 
+  color: #66fcf1; 
   font-size: 14px;
   padding: 20px;
 }
@@ -398,7 +409,7 @@ footer {
 .footer-social a {
   margin: 0 10px;
   font-size: 18px;
-  color: #333; 
+  color: #66fcf1; 
 }
 
 .footer-social a:hover {
