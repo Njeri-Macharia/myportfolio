@@ -13,8 +13,8 @@ header nav{
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  padding: 0.5em 0;
+  align-items: center;
+  /* padding: 0.5em 1em; */
   z-index: 1000;
   }
 nav ul{
@@ -60,6 +60,24 @@ nav il{
     border: 2px solid #66fcf1;
    
   }
+  /* Hamburger menu style */
+.hamburger {
+  display: none; /* Hide on larger screens */
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+   margin-left: auto;
+}
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #c5c6c7;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out; /* Animation */
+}
+
  
   /* hero section styling */
   .hero {
@@ -441,3 +459,51 @@ footer {
 }
 
 /* responsive design */
+@media (max-width: 768px) {
+  header nav {
+      flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+      align-items: center; /* Center items vertically */
+      padding: 1em;
+    }
+  .logo{
+    padding-bottom: 0;
+  }
+.hamburger {
+  display: block; /* Show hamburger on smaller screens */
+  }
+.menu {
+  flex-direction: column; /* Stack menu items vertically */
+  width: 100%; /* Take full width on mobile */
+  margin-bottom: 0.5em; /* Add some spacing below menu */
+  max-height: 0; /* Initially hide the menu */
+  overflow: hidden; /* Hide overflow */
+  transition: max-height 0.3s ease-out; /* Animation */
+
+  }
+.menu li{
+      padding: 0.3em 0;
+  }
+.cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+.cta .btn {
+      margin-left: 0;
+      margin-right: 0;
+      width: 60%;
+      text-align: center;
+    }
+.menu.active {
+    max-height: 500px; /* Adjust to accommodate menu content */
+  }
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  }
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  }
+}
