@@ -220,12 +220,20 @@ nav il{
   align-items: flex-start;
   position: relative;
 }
-
-
+.skill-card .image{
+  height: 50;
+}
+.skill-card .image img{
+  /* width: 80%; */
+  /* height: 50; */
+  object-fit: cover;
+  border-radius: 20px;
+}
 .skill-card h3 {
   margin: 0;
   font-size: 1.3em;
   color: #45a29e;
+
 }
 
 .skill-card p {
@@ -233,7 +241,11 @@ nav il{
   color: #c5c6c7;
   margin: 10px 0 20px;
 }
-
+.skill-card a{
+  text-decoration: none;
+  color: #66fcf1;
+  /* padding-top: 20px; */
+}
 
 
 
@@ -251,6 +263,7 @@ nav il{
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  align-items: flex-start;
 }
 
 .talk-to-me, .write-project {
@@ -281,14 +294,14 @@ nav il{
 }
 
 .contact-card .icon {
-  font-size: 2em;
-  margin-right: 15px;
+  font-size: 2.0em;
+  color: #45a29e;
  
 }
 
 .contact-info h3 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 
 .contact-info p {
@@ -312,8 +325,12 @@ nav il{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  align-items: flex-start;
 }
-
+.form-group{
+  width: 100%;
+}
 .form-group label {
   font-size: 1em;
   margin-bottom: 5px;
@@ -331,8 +348,7 @@ nav il{
 }
 textarea{
   height: 135px;
-  margin-top: 10px; 
-  margin-bottom: 10px;
+ 
 }
 
 .form-group input::placeholder, .form-group textarea::placeholder {
@@ -349,13 +365,14 @@ textarea{
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
+  align-self: flex-start;
 }
 
 
 .divider {
   width: 90%;
   height: 2px;
-  background-color: #1f2833; /* Adjust color as needed */
+  background-color: #45a29e; /* Adjust color as needed */
   margin: 20px auto;
   position: relative;
 }
