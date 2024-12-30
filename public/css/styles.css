@@ -113,9 +113,7 @@ nav il{
   /* center all the headings */
 .heading{
   text-align: center;
-  /* padding-top: 10px; */
-  /* font-size: larger;
-  color: #1f2833; */
+
 } 
 /* about section styling */
 
@@ -138,34 +136,38 @@ nav il{
 
 .about-image {
   flex: 1;
-  height: 100%;
+  height: 540px;
+  width: 200px;
   overflow: hidden;
   position: relative;
-  padding-top: 30px;
+  border-radius: 30px;
   
 }
 
 .about-image img {
-  width: 100%;
-  object-fit: fill;
+ /* padding: 100px; */
+ padding-left: 135px;
+ border-radius: 30px;
   
  
 }
 
 .about-text {
  flex: 1;
- /* padding: 20px; */
  display: flex;
- line-height: 1.8;
+ line-height: 1.2;
  flex-direction: column;
- /* align-items: center; */
  text-align: justify;
  color: #c5c6c7; 
+ 
+}
+.about-text p{
+  padding-right: 120px;
 }
 .progress-bar {
   background-color: #e0e0e0;
   border-radius: 5px;
-  width: 50%;
+  width: 80%;
   height: 10px;
   position: relative;
   overflow: hidden;
@@ -178,7 +180,15 @@ nav il{
 }
 .about-text span {
   font-size: 0.8em;
-
+  align-self: flex-start;
+}
+.contact-btn .btn{
+  padding: 0.5em 1em;
+  background-color:transparent ;
+  color: #66fcf1;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid #66fcf1;
   align-self: flex-start;
 }
 
@@ -187,19 +197,20 @@ nav il{
   /* background-color: #FFFFFF; */
   color: #c5c6c7;
   padding-bottom: 60px;
+  /* text-align: center; */
 }
 .experience .heading{
   color:#66fcf1 ;
-  padding: 20px;
+  padding-top: 50px;
 }
 .experience p{
   font-size: 1.1em;
-  /* color: #555; */
+  
   margin-bottom: 40px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  
+  text-align: center;
+  align-self: center;
+  }
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -224,8 +235,7 @@ nav il{
   height: 50;
 }
 .skill-card .image img{
-  /* width: 80%; */
-  /* height: 50; */
+  
   object-fit: cover;
   border-radius: 20px;
 }
@@ -339,12 +349,13 @@ nav il{
 
 .form-group input, .form-group textarea {
   width: 100%;
-  padding: 15px;
+  max-width: 450px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #1f2833;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.0em;
 }
 textarea{
   height: 135px;
