@@ -113,24 +113,26 @@ nav il{
   /* center all the headings */
 .heading{
   text-align: center;
-  padding-top: 10px;
-  font-size: larger;
-  color: #1f2833;
+  /* padding-top: 10px; */
+  /* font-size: larger;
+  color: #1f2833; */
 } 
 /* about section styling */
 
 .about-section{
-  background-color: #1f2833;
+  /* background-color: #1f2833; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   height: 100vh;
   width: 100%;
+  /* padding: 100px; */
 
 }
 .about-text .heading{
   color: #45a29e;
+  text-align: start;
 
 }
 
@@ -139,6 +141,7 @@ nav il{
   height: 100%;
   overflow: hidden;
   position: relative;
+  padding-top: 30px;
   
 }
 
@@ -151,7 +154,7 @@ nav il{
 
 .about-text {
  flex: 1;
- padding: 20px;
+ /* padding: 20px; */
  display: flex;
  line-height: 1.8;
  flex-direction: column;
@@ -162,7 +165,7 @@ nav il{
 .progress-bar {
   background-color: #e0e0e0;
   border-radius: 5px;
-  width: 90%;
+  width: 50%;
   height: 10px;
   position: relative;
   overflow: hidden;
@@ -174,13 +177,12 @@ nav il{
   border-radius: 5px;
 }
 .about-text span {
-  font-size: 0.9em;
-  /* color: #555; */
-  margin-top: 10px;
-  align-self: flex-end;
+  font-size: 0.8em;
+
+  align-self: flex-start;
 }
 
-/*experience section styling */
+/*Projects section styling */
 .experience{
   /* background-color: #FFFFFF; */
   color: #c5c6c7;
@@ -188,6 +190,7 @@ nav il{
 }
 .experience .heading{
   color:#66fcf1 ;
+  padding: 20px;
 }
 .experience p{
   font-size: 1.1em;
@@ -352,10 +355,7 @@ textarea{
   transition: background-color 0.3s;
 }
 
-/* .submit-btn:hover {
-  background-color: #;
-} */
-/* divider styling */
+
 .divider {
   width: 90%;
   height: 2px;
