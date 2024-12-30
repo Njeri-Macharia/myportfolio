@@ -209,7 +209,7 @@ nav il{
 }
 
 .skill-card {
-  background-color: #fff;
+  background-color: #1f2833;
   border-radius: 10px;
   box-shadow: 0 10px 14px rgba(0, 0, 0, 0.5);
   padding: 20px;
@@ -221,20 +221,16 @@ nav il{
   position: relative;
 }
 
-.skill-card .icon {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
 
 .skill-card h3 {
   margin: 0;
   font-size: 1.3em;
-  color: #222;
+  color: #45a29e;
 }
 
 .skill-card p {
   font-size: 0.9em;
-  color: #666;
+  color: #c5c6c7;
   margin: 10px 0 20px;
 }
 
