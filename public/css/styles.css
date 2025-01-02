@@ -142,8 +142,8 @@ nav il{
   /* align-items: center;+ */
   justify-content: center;
   align-items: flex-start;
-  padding: 2em;
-  gap: 20px;
+  padding: 5px;
+  gap: 10px;
   width: 100%;
 
 }
@@ -172,9 +172,9 @@ nav il{
 
 .about-text {
  flex: 1;
- min-width: 200px;
- padding: 1.5em;
- margin: 0.5em;
+ min-width: 50px;
+ /* padding: 1.0em; */
+ /* margin: 0.5em; */
  color: #c5c6c7;
  text-align: justify;
    
@@ -422,46 +422,57 @@ footer {
   color: #66fcf1; /* Darker text color */
   padding: 20px 0;
   text-align: center;
-  align-items: center;
+  /* align-items: center; */
   font-family: Arial, sans-serif;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
-
-.footer-container p {
+.footer-container p.copyright {
+  margin: 10px 0;
+  font-size: 14px;
+}
+/* .footer-container p {
   margin: 10px 0;
   font-size: 14px;
   align-items: center;
 
-}
+} */
 
 .footer-links {
   margin: 10px 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #66fcf1; 
   font-size: 14px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
   color: #00cc6e;
 }
-
+.footer-social {
+  margin: 10px 0; /* Added margin for spacing */
+  display: flex; /* Enables flex for the icons */
+  justify-content: center; /* Centers the icons horizontally */
+  align-items: center; /* Vertically centers the icons */
+  gap: 10px; /* Add spacing between icons */
+}
 
 .footer-social a {
-  margin: 0 10px;
-  font-size: 18px;
+  /* margin: 10px 0; */
+  font-size: 1.2em;
+
   color: #66fcf1; 
 }
 
@@ -532,7 +543,7 @@ footer {
  }
  .about-section .about-text {
         width: 100%;
-        margin: 0.5em 0;
+        /* margin: 0.5em 0; */
       }
   .about-section .about-text p{
     font-size: 0.9em;
@@ -557,8 +568,8 @@ flex-direction: column; /* Stack on small screens */
 align-items: center;
 }
 .talk-to-me, .write-project {
-min-width: 100%;
-max-width: 100%;
+min-width: 80%;
+max-width: 80%;
 padding: 0.5em 0;
 }
 .talk-to-me h2, .write-project h2{
@@ -568,5 +579,33 @@ padding: 0.5em 0;
 .contact-card {
   width: 90%;
   padding: 15px;
+}
+/* footer  */
+footer{
+  padding: 15px 0;
+}
+.footer-container {
+  padding: 0 10px;
+}
+
+.footer-links {
+  flex-direction: column; /* Stack links vertically */
+  align-items: center; /* Center links */
+  gap: 5px; /* Reduce the gap between links */
+}
+
+.footer-links a {
+   padding: 5px; /* Reduce the padding of the links */
+  font-size: 14px; /* Adjust font size */
+  white-space: nowrap; /* Prevent wrapping of links */
+}
+
+.footer-social {
+  margin-top: 10px;
+  gap: 10px; /* Maintain spacing for icons */
+}
+
+  .footer-social a {
+  font-size: 1.1em; /* Slightly reduced icon size */
 }
 }
