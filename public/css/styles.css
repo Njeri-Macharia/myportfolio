@@ -142,7 +142,7 @@ nav il{
   /* align-items: center;+ */
   justify-content: center;
   align-items: flex-start;
-  padding: 5px;
+  /* padding: 5px; */
   gap: 10px;
   width: 100%;
 
@@ -173,6 +173,8 @@ nav il{
 .about-text {
  flex: 1;
  min-width: 50px;
+ max-width: 100%;
+ /* text-align: center; */
  /* padding: 1.0em; */
  /* margin: 0.5em; */
  color: #c5c6c7;
@@ -182,7 +184,7 @@ nav il{
 }
 .about-text p{
   margin-bottom: 0.5em;
-  line-height: 1.6;
+  line-height: 1.0;
 }
 .progress-bar {
   background-color: #e0e0e0;
