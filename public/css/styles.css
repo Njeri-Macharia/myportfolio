@@ -6,15 +6,14 @@ body {
   }
   /* navigation for the portfolio  */
 header nav{
-  position: relative;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0.5em 1em; */
   z-index: 1000;
   }
 nav ul{
@@ -67,7 +66,8 @@ nav il{
   background: none;
   border: none;
   padding: 0;
-   margin-left: auto;
+  /* right: 0; */
+  margin-left: auto;
 }
 .hamburger .bar {
   display: block;
@@ -136,69 +136,75 @@ nav il{
 /* about section styling */
 
 .about-section{
-  /* background-color: #1f2833; */
+  
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* align-items: center;+ */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em;
   gap: 20px;
-  height: 100vh;
   width: 100%;
-  /* padding: 100px; */
 
 }
 .about-text .heading{
   color: #45a29e;
   text-align: start;
-
 }
 
-.about-image {
+.about-section .about-image {
   flex: 1;
-  height: 540px;
-  width: 200px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 30px;
+  min-width: 200px;
+  max-width: 500px;
+  margin: 0.5em;
+  text-align: center;
+  
   
 }
 
 .about-image img {
- /* padding: 100px; */
- padding-left: 135px;
- border-radius: 30px;
+ max-width: 100%;
+ border-radius: 20px;
+ height: auto;
   
  
 }
 
 .about-text {
  flex: 1;
- display: flex;
- line-height: 1.2;
- flex-direction: column;
+ min-width: 200px;
+ padding: 1.5em;
+ margin: 0.5em;
+ color: #c5c6c7;
  text-align: justify;
- color: #c5c6c7; 
+   
  
 }
 .about-text p{
-  padding-right: 120px;
+  margin-bottom: 0.5em;
+  line-height: 1.6;
 }
 .progress-bar {
   background-color: #e0e0e0;
   border-radius: 5px;
   width: 80%;
-  height: 10px;
+  height: 8px;
   position: relative;
   overflow: hidden;
-  /* align-self: flex-start; */
+  
 }
 .progress {
   background-color: #45a29e;
   height: 100%;
   border-radius: 5px;
+  transition: width 0.5s ease-in-out;
 }
 .about-text span {
-  font-size: 0.8em;
-  align-self: flex-start;
+  margin-left: 0.5em;
+  /* align-self: flex-start; */
+}
+.about-section .contact-btn {
+  margin-top: 1em;
 }
 .contact-btn .btn{
   padding: 0.5em 1em;
@@ -207,7 +213,7 @@ nav il{
   text-decoration: none;
   border-radius: 20px;
   border: 2px solid #66fcf1;
-  align-self: flex-start;
+  /* align-self: flex-start; */
 }
 
 /*Projects section styling */
@@ -506,4 +512,32 @@ footer {
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   }
+  .about-section {
+    flex-direction: column; /* Stack on small screens */
+    align-items: center; /* Center everything on small screens */
+  }
+  .about-section .about-image {
+    min-width: 100%;
+    max-width: 200px; /* Adjusted maximum width for image on smaller screens */
+    margin: 0.5em auto;
+
+ }
+ .about-section .about-text {
+        width: 100%;
+        margin: 0.5em 0;
+      }
+  .about-section .about-text p{
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+.about-section .about-text span{
+     display: inline-block;
+     margin-left: 0.5em;
+     margin-bottom: 0.3em;
+     
+}
+.about-section .progress-bar{
+     margin-bottom: 1em;
+}
 }
