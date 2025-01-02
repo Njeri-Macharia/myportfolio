@@ -290,6 +290,8 @@ nav il{
 }
 .contact-section .heading{
   color: #66fcf1;
+  text-align: center; /* Center heading */
+  margin-bottom: 1.5em;
 }
 
 .container {
@@ -298,25 +300,28 @@ nav il{
   justify-content: space-between;
   gap: 20px;
   align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto; 
 }
 
 .talk-to-me, .write-project {
   flex: 1;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 45%;
+  padding: 1em;
  }
 
 .talk-to-me h2, .write-project h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #45a29e;
-  /* margin-bottom: 20px; */
+  margin-bottom: 0.8em;
 }
 
 .contact-card {
   background-color: #1f2833;
   border-radius: 10px;
-  height: 100px;
-  width: 350px;
+  /* height: 100px; */
+  width: 100%;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -358,7 +363,7 @@ nav il{
 .write-project form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   width: 100%;
   align-items: flex-start;
 }
@@ -373,7 +378,7 @@ nav il{
 
 .form-group input, .form-group textarea {
   width: 100%;
-  max-width: 450px;
+  max-width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -466,6 +471,7 @@ footer {
 
 /* responsive design */
 @media (max-width: 768px) {
+  /* header section */
   header nav {
       flex-wrap: wrap; /* Allow items to wrap to next line if needed */
       align-items: center; /* Center items vertically */
@@ -512,6 +518,8 @@ footer {
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   }
+
+  /* about section */
   .about-section {
     flex-direction: column; /* Stack on small screens */
     align-items: center; /* Center everything on small screens */
@@ -539,5 +547,26 @@ footer {
 }
 .about-section .progress-bar{
      margin-bottom: 1em;
+}
+/* contact section */
+.contact-section {
+  padding: 20px 1em;
+}
+.contact-section .container{
+flex-direction: column; /* Stack on small screens */
+align-items: center;
+}
+.talk-to-me, .write-project {
+min-width: 100%;
+max-width: 100%;
+padding: 0.5em 0;
+}
+.talk-to-me h2, .write-project h2{
+    font-size: 1.3em;
+}
+
+.contact-card {
+  width: 90%;
+  padding: 15px;
 }
 }
